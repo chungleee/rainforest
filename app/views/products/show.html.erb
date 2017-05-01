@@ -3,8 +3,6 @@
 <div class="description-box">
   <%= @product.description %>
 </div>
-
-<%= link_to "Back to homepage", products_path %>
 <br>
 <%= link_to "Edit product", edit_product_path %>
 <%= link_to "Delete product", product_path(@product), method: :delete, data: { confirm: "You sure fam?"} %>
