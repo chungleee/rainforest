@@ -2,6 +2,9 @@
 
 <div class="description-box">
   <%= @product.description %>
+  <br>
+  <br>
+  Price: $<%=@product.formatted_price %>
 </div>
 <br>
 <%= link_to "Edit product", edit_product_path %>

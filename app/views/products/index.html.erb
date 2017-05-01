@@ -4,7 +4,13 @@
 
 <%= @products.each do |product| %>
   <h2><%= product.name %></h2>
-  <div><%= product.description %></div>
+  <div>
+    <%= product.description %>
+    <br>
+    <br>
+    Price: $<%= product.formatted_price %>
+  </div>
+
   <br>
   <%= link_to "check product out", product %>
 <% end %>
