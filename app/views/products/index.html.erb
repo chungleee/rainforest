@@ -1,11 +1,10 @@
 <h1>List of products</h1>
 
+<%= link_to "Want to list a product?", new_product_path %>
+
 <%= @products.each do |product| %>
-
-  <p><%= product.name %></p>
-
-  <p><%= product.description %></p>
-
-  <p><%= product.price_in_cents %></p>
-
+  <h2><%= product.name %></h2>
+  <div><%= product.description %></div>
+  <br>
+  <%= link_to "check product out", product %>
 <% end %>
